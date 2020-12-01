@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Java Marks</th>
+            <th>Maths Marks</th>
+            <th>Science Marks</th>
+            <th>Average Marks</th>
+        </tr>
+
+        <tr *ngFor="let s of sarr">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.java_mks}}</td>
+            <td>{{s.maths_mks}}</td>
+            <td>{{s.sci_mks}}</td>
+            <td>{{s.avg}}</td>
+        </tr>
+    </table>
+
+   <!--  <button type="button" name="btn" (click)="TotalMarks()">Display Marks</button> --> 
+</body>
+</html>
